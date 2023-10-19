@@ -36,8 +36,3 @@ async def log_loop(event_filter, poll_interval):
             handle_event(event)
         await asyncio.sleep(poll_interval)
 
-def main():
-    # filter for pending transactions
-    tx_filter = web3.eth.filter('pending')
-    loop = asyncio.get_event_loop()
-
