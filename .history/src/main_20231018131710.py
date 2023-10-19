@@ -8,7 +8,7 @@ wss = 'wss://bold-sly-resonance.quiknode.pro/aa862642de3dcdad72ab18e5ac7c6babfae
 web3 = Web3(Web3.WebsocketProvider(wss))
 
 print(web3.isConnected())
-
+.
 def handle_event(event):
     try:
         transaction = Web3.toJSON(event).strip('"')
